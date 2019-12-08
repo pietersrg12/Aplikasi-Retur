@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YantekActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Koordinat"
+            android:layout_weight="1"
+            android:id="@+id/getkordinat"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="generate "
+            android:id="@+id/kordinat"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="14"
+        android:maxLines="1"
+        android:hint="APKT"
+        android:textColorHint="@color/colorPrimary"
+        android:id="@+id/apkt"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="14"
+        android:maxLines="1"
+        android:hint="Nomor Meter / Idpel"
+        android:textColorHint="@color/colorPrimary"
+        android:id="@+id/nometer"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="14"
+        android:maxLines="1"
+        android:hint="Penyebab Gangguan"
+        android:textColorHint="@color/colorPrimary"
+        android:id="@+id/gangguan"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="14"
+        android:maxLines="1"
+        android:hint="Tindakan"
+        android:textColorHint="@color/colorPrimary"
+        android:id="@+id/tindakan"/>
+
+
+</LinearLayout>
+
