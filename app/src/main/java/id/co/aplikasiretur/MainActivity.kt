@@ -11,10 +11,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-    retur.setOnClickListener {
-        val intentHome = Intent (this, activity_retur::class.java)
-        startActivity(intentHome)
-    }
-
+        yantek.setOnClickListener {
+            val intentHome = Intent(this, YantekActivity::class.java)
+            startActivity(intentHome)
+        }
+        yanapp.setOnClickListener {
+            val intentHome = Intent(this, YanappActivity::class.java)
+            startActivity(intentHome)
+        }
     }
 }

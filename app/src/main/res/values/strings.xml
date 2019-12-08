@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Aplikasi Retur</string>
+
+    <string-array name="ar_tindakan">
+        <item>Di Los Sementara</item>
+        <item>Tidak Di Los</item>
+        <item>Pelanggan Diundang Ke Kantor</item>
+
+
+    </string-array>
 </resources>

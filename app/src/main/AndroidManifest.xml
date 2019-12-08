@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="id.co.aplikasiretur">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,8 +15,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".YantekActivity"></activity>
         <activity android:name=".YanappActivity" />
-        <activity android:name=".activity_retur" />
-        <activity android:name=".activity_upload" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

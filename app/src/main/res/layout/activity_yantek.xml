@@ -4,62 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".YantekActivity"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="20dp"
+    tools:context=".YantekActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="2">
+
         <TextView
+            android:id="@+id/kordinat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Koordinat"
             android:layout_weight="1"
-            android:id="@+id/getkordinat"
-            />
+            android:text="Koordinat" />
+
         <Button
+            android:id="@+id/getkordinat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="generate "
-            android:id="@+id/kordinat"/>
+            android:text="Generate" />
     </LinearLayout>
 
     <EditText
+        android:id="@+id/apkt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLength="14"
-        android:maxLines="1"
         android:hint="APKT"
-        android:textColorHint="@color/colorPrimary"
-        android:id="@+id/apkt"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:maxLength="14"
         android:maxLines="1"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/nometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Nomor Meter / Idpel"
-        android:textColorHint="@color/colorPrimary"
-        android:id="@+id/nometer"/>
+        android:inputType="number"
+        android:maxLength="12"
+        android:maxLines="1"
+        android:textColorHint="@color/colorPrimary" />
+
     <EditText
+        android:id="@+id/gangguan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLength="14"
-        android:maxLines="1"
         android:hint="Penyebab Gangguan"
-        android:textColorHint="@color/colorPrimary"
-        android:id="@+id/gangguan"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:maxLength="14"
         android:maxLines="1"
+        android:textColorHint="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Tindakan"
         android:textColorHint="@color/colorPrimary"
-        android:id="@+id/tindakan"/>
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/sp_tindakan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
